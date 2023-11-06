@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Programación I | Parcial 2 | APELLIDO/S</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="parcial.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Programación I | Parcial 2 | APELLIDO/S | Mi carrito</h1>
+    </header>
+    <main>
+        <div class="categoryFilter">
+          <p>Filtrar por:</p>
+          <ul id="categories"></ul>
+          <button onclick="showAllProductsAndCategories()">
+            Limpiar filtro
+          </button>
+        </div>
+
+      <div id="minicarrito">
+        <p><span id="cartQuantity">0</span> ítems agregados</p>
+        <p>$<span id="totalPrice">0</span> es el total</p>
+        <button onclick="showCartModal()">Ver carrito</button>
+      </div>
+      <h2>Productos</h2>
+      <!-- Generar el contenido del div#productos dinámicamente -->
+      <div id="productos"></div>
+    </main>
+    <footer>
+      <ul>
+        <li>Profesor Federico Noto</li>
+        <li>
+          <a
+            href="mailto:federico.noto@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre"
+            target="_blank"
+            >federico.noto@davinci.edu.ar</a
+          >
+        </li>
+        <li>Programación 1</li>
+      </ul>
+    </footer>
+
+    <!-- Generar el div#modalProducto y su contenido dinámicamente
+        <div class="modal" id="modalProducto">
+            <a class="cerrar" href="javascript:void(0)">X</a>
+            <img src="producto-de-ejemplo.jpg" alt="Nombre del producto" />
+            <h3>Producto</h3>
+            <p>Descripción</p>
+            <p>Precio: <span>$0</span></p>
+            <p>Categoría</p>
+            <button>Agregar</button>
+        </div> -->
+
+    <!-- Generar el div#modalCarrito y su contenido dinámicamente
+        <div class="modal" id="modalCarrito">
+            <a class="cerrar" href="javascript:void(0)">X</a>
+            <p>Items: <span>3</span> - Total: <span>$0</span></p>
+            <hr />
+            <ul>
+                <li>Nombre del producto <span>$0</span> <span>0 items</span> <a href="#">Eliminar</a></li>
+                <li>Nombre del producto <span>$0</span> <span>0 items</span> <a href="#">Eliminar</a></li>
+                <li>Nombre del producto <span>$0</span> <span>0 items</span> <a href="#">Eliminar</a></li>
+            </ul>
+            <button>Vaciar</button>
+            <button>Ir al checkout</button>
+        </div> -->
+  </body>
+</html>
