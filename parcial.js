@@ -24,11 +24,11 @@ let productos = [
   },
   {
     id: 2,
-    nombre: "Vision & Scarlet Witch Vol. 11",
-    descripcion: "Visión y Wanda habían estado viviendo de sus ahorros desde que perdieron su salario de los Vengadores, pero la temporada de impuestos los impulsa a buscar nuevas fuentes de ingresos. Aceptan que NOW Magazine haga una sesión de fotos en su hogar, para lo cual el fotógrafo Peter Parker pasa un día con ellos, pretendiendo no conocerlos como Spider-Man. Con la noticia de que el bebé que está por llegar será grande, el Dr. Strange ha recomendado que Wanda se tome las cosas con calma en su último mes de embarazo, por lo que pasa el día enseñando a Holly la brujería",
-    precio: 5,
-    imagen: "./img/visionWanda11.jpg",
-    categoria: "wandaVision",
+    nombre: "Secret Wars Vol. 1",
+    descripcion: "En un escenario misterioso, Los Vengadores, la Patrulla-X, los Cuatro Fantásticos, Iron Man, Spiderman y Hulk, junto a Magneto, se encuentran en una nave junto a varios villanos notorios, como Encantadora, Ultrón 11, el Hombre Absorbente, la Brigada de Demolición, el Lagarto, el Hombre Molécula, el Dr. Octopus, Kang, Galactus y el Dr. Muerte. Presencian la destrucción de una galaxia y son transportados al vacío que queda en su lugar.",
+    precio: 30,
+    imagen: "./img/secretWars.jpg",
+    categoria: "secretWars",
   },
   {
     id: 3,
@@ -38,13 +38,14 @@ let productos = [
     imagen: "./img/gotg.jpg",
     categoria: "guardianesDeLaGalaxia",
   },
+
   {
     id: 4,
-    nombre: "Secret Wars Vol. 1",
-    descripcion: "En un escenario misterioso, Los Vengadores, la Patrulla-X, los Cuatro Fantásticos, Iron Man, Spiderman y Hulk, junto a Magneto, se encuentran en una nave junto a varios villanos notorios, como Encantadora, Ultrón 11, el Hombre Absorbente, la Brigada de Demolición, el Lagarto, el Hombre Molécula, el Dr. Octopus, Kang, Galactus y el Dr. Muerte. Presencian la destrucción de una galaxia y son transportados al vacío que queda en su lugar.",
-    precio: 30,
-    imagen: "./img/secretWars.jpg",
-    categoria: "secretWars",
+    nombre: "Vision & Scarlet Witch Vol. 11",
+    descripcion: "Visión y Wanda habían estado viviendo de sus ahorros desde que perdieron su salario de los Vengadores, pero la temporada de impuestos los impulsa a buscar nuevas fuentes de ingresos. Aceptan que NOW Magazine haga una sesión de fotos en su hogar, para lo cual el fotógrafo Peter Parker pasa un día con ellos, pretendiendo no conocerlos como Spider-Man. Con la noticia de que el bebé que está por llegar será grande, el Dr. Strange ha recomendado que Wanda se tome las cosas con calma en su último mes de embarazo, por lo que pasa el día enseñando a Holly la brujería",
+    precio: 5,
+    imagen: "./img/visionWanda11.jpg",
+    categoria: "wandaVision",
   },
   {
     id: 5,
