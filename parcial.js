@@ -460,12 +460,11 @@ const buildCheckoutModal = () => {
     form.appendChild(input);
   });
 
-  // Select para el método de pago
   let paymentMethodSelect = document.createElement("select");
   paymentMethodSelect.setAttribute("id", "paymentMethod");
   paymentMethodSelect.setAttribute("required", "required");
 
-  let paymentOptions = ["Efectivo", "Tarjeta de débito", "Tarjeta de crédito"];
+  let paymentOptions = ["MercadoPago", "Tarjeta de débito"];
   paymentOptions.forEach(option => {
     let optionElement = document.createElement("option");
     optionElement.value = option.toLowerCase();
@@ -473,29 +472,13 @@ const buildCheckoutModal = () => {
     paymentMethodSelect.appendChild(optionElement);
   });
 
-  // Select para las cuotas
-  let installmentSelect = document.createElement("select");
-  installmentSelect.setAttribute("id", "installments");
-
-  let installmentOptions = ["1", "3", "6", "12"];
-  installmentOptions.forEach(option => {
-    let optionElement = document.createElement("option");
-    optionElement.value = option;
-    optionElement.textContent = `${option} cuota${option === "1" ? "" : "s"}`;
-    installmentSelect.appendChild(optionElement);
-  });
-
-  // Añadir los select al formulario
   form.appendChild(paymentMethodSelect);
-  form.appendChild(installmentSelect);
 
-  // Botón para cerrar el modal que no envía el formulario
   let closeButton = document.createElement("button");
   closeButton.setAttribute("type", "button");
   closeButton.textContent = "Cerrar";
   closeButton.onclick = closeCheckoutModal;
 
-  // Botón para realizar la compra que sí enviará el formulario
   let submitButton = document.createElement("button");
   submitButton.setAttribute("type", "submit");
   submitButton.textContent = "Comprar";
